@@ -9,7 +9,7 @@
     if (page.category) {
         site.categories.forEach(function(item) {
             if(item.name === page.category) {
-                postList = item.posts.slice();
+                postList = item.posts.sort('date', -1);
             }
         });
         title = page.category;
@@ -17,12 +17,12 @@
     else if (page.tag) {
         site.tags.forEach(function(item) {
             if(item.name === page.tag) {
-                postList = item.posts;
+                postList = item.posts.sort('date', -1);
             }
         });
         title = "#" + page.tag;
     } else {
-        postList = site.posts;
+        postList = site.posts.sort('date', -1);
     }
 %>
 

@@ -12,7 +12,7 @@ menu:
 default_post_title: Untitled
 
 # Archive Date Format
-archive_date_format: MMM YYYY
+archive_date_format: DD MMM YYYY
 
 # Comments.
 comments:
